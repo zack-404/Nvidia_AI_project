@@ -40,7 +40,7 @@
 ## 成果
 [測驗程式碼](https://github.com/zack-404/Nvidia_AI_project/blob/main/07.py)
 
-
+![](https://i.imgur.com/eMDbNGj.png)
 
 ## 證書
 ![](https://i.imgur.com/8eXQrL0.png)
