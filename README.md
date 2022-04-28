@@ -54,13 +54,16 @@
 也經過這次的課程，多了台有Nvidia GPU的Server可以使用，也許未來可以多多善用這個資源。
 
 ## 成果
-[測驗成果](https://github.com/zack-404/Nvidia_AI_project/blob/main/07.py)
+[測驗成果](https://github.com/zack-404/Nvidia_DLI_project/blob/main/07.py)
 
 ```
 評估模型
-在理想狀況下，現在你的模型驗證準確度應該會達到 92% 或以上。如果不是如此，建議你回到先前步驟執行更多 Epoch 的訓練，或是調整資料增強。
+在理想狀況下，現在你的模型驗證準確度應該會達到 92% 或以上。
+如果不是如此，建議你回到先前步驟執行更多 Epoch 的訓練，或是調整資料增強。
 
-達到理想的驗證準確度後，請執行下列儲存格來評估模型。評估函數會回傳一個元組(Tuple)，其中第一個值表示損失，第二個值表示準確度。若要通過本測驗，模型的準確度值必須為 92% or higher。
+達到理想的驗證準確度後，請執行下列儲存格來評估模型。
+評估函數會回傳一個元組(Tuple)，其中第一個值表示損失，第二個值表示準確度。
+若要通過本測驗，模型的準確度值必須為 92% or higher。
 
 model.evaluate(valid_it, steps=valid_it.samples/valid_it.batch_size)
 11/10 [================================] - 4s 346ms/step - loss: 1.0733 - categorical_accuracy: 0.9757
@@ -68,7 +71,8 @@ model.evaluate(valid_it, steps=valid_it.samples/valid_it.batch_size)
 執行測驗
 若要測驗模型，請執行以下兩個儲存格。
 
-注意： run_assessment 會假定你的模型名稱為 model，以及你的驗證資料迭代器名稱為 valid_it。若你修改了這些變數名稱，請更新傳遞至 run_assessment的引數名稱。
+注意： run_assessment 會假定你的模型名稱為 model，以及你的驗證資料迭代器名稱為 valid_it。
+若你修改了這些變數名稱，請更新傳遞至 run_assessment的引數名稱。
 
 from run_assessment import run_assessment
 run_assessment(model, valid_it)
